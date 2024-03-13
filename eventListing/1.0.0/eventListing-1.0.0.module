@@ -1,0 +1,187 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tomorrow.uicomponent",
+    "module": "eventListing",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "eventListing-1.0.0.aar",
+          "url": "eventListing-1.0.0.aar",
+          "size": 121250,
+          "sha512": "089cd3df26eb782a8508ef17d620153205000096b78506f57ad117c81546b5fa058a799f992bff2179dd6cf3361104c4641b2478374bbfae555ae5dbc9e0885e",
+          "sha256": "5b1ccae64593f43261f8e08ac8fa996875a37f8706a8b61724f6592f114f5a4b",
+          "sha1": "bb9f8f67334a30d432f080292496a0557aa0fc90",
+          "md5": "e3cac2ed5b8474cbd452c9f5451b654b"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.tomorrow.uicomponent",
+          "module": "components",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui",
+          "version": {
+            "requires": "1.5.3"
+          }
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation",
+          "version": {
+            "requires": "1.5.3"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-graphics",
+          "version": {
+            "requires": "1.5.3"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-tooling-preview",
+          "version": {
+            "requires": "1.5.3"
+          }
+        },
+        {
+          "group": "androidx.compose.material",
+          "module": "material",
+          "version": {
+            "requires": "1.5.3"
+          }
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3",
+          "version": {
+            "requires": "1.1.1"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-viewmodel-compose",
+          "version": {
+            "requires": "2.6.0-alpha01"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-tooling",
+          "version": {
+            "requires": "1.5.3"
+          }
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation-layout",
+          "version": {
+            "requires": "1.5.3"
+          }
+        },
+        {
+          "group": "io.coil-kt",
+          "module": "coil-compose",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "androidx.compose.compiler",
+          "module": "compiler",
+          "version": {
+            "requires": "1.5.3"
+          }
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity-compose",
+          "version": {
+            "requires": "1.7.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "eventListing-1.0.0.aar",
+          "url": "eventListing-1.0.0.aar",
+          "size": 121250,
+          "sha512": "089cd3df26eb782a8508ef17d620153205000096b78506f57ad117c81546b5fa058a799f992bff2179dd6cf3361104c4641b2478374bbfae555ae5dbc9e0885e",
+          "sha256": "5b1ccae64593f43261f8e08ac8fa996875a37f8706a8b61724f6592f114f5a4b",
+          "sha1": "bb9f8f67334a30d432f080292496a0557aa0fc90",
+          "md5": "e3cac2ed5b8474cbd452c9f5451b654b"
+        }
+      ]
+    },
+    {
+      "name": "releaseSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "files": [
+        {
+          "name": "eventListing-1.0.0-sources.jar",
+          "url": "eventListing-1.0.0-sources.jar",
+          "size": 14313,
+          "sha512": "5a6c58d63f6475143589b3b253a1f31cfa1aa9ce1e1dc796f9036bdcbc5a6985515f1021bec04ca84e2f722f4075ad4ed92388bf3e160d5653783faa59a42042",
+          "sha256": "8d985b44f50a3485c9086f3bef4381579ce53db41f98845ca087512f157ac671",
+          "sha1": "494b5f3863db69a06d1254239365c7be44777798",
+          "md5": "8a2622109d106264d04e0efda4ae13c9"
+        }
+      ]
+    }
+  ]
+}

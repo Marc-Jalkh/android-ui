@@ -1,0 +1,82 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.tomorrow.uicomponent",
+    "module": "uiComponents",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "uiComponents-1.0.0.jar",
+          "url": "uiComponents-1.0.0.jar",
+          "size": 261,
+          "sha512": "5d437f0dbf1376dc4542427441e6f8bd328831d500f78239329f538d00a2955e0c8b04cc0571dfd8130d9ce6ee5274eae2bafc9dbbeebc8ac6a85da1f00856f6",
+          "sha256": "d87a1fe2243456caa8af8146c24e175d17e9b2cdcf36db09732bcbb7005bf6e5",
+          "sha1": "4323346d0f0c3a5030c860a4e865b7609eba33c0",
+          "md5": "138b7337425664a6e9e37791711b6ed4"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.9.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "uiComponents-1.0.0.jar",
+          "url": "uiComponents-1.0.0.jar",
+          "size": 261,
+          "sha512": "5d437f0dbf1376dc4542427441e6f8bd328831d500f78239329f538d00a2955e0c8b04cc0571dfd8130d9ce6ee5274eae2bafc9dbbeebc8ac6a85da1f00856f6",
+          "sha256": "d87a1fe2243456caa8af8146c24e175d17e9b2cdcf36db09732bcbb7005bf6e5",
+          "sha1": "4323346d0f0c3a5030c860a4e865b7609eba33c0",
+          "md5": "138b7337425664a6e9e37791711b6ed4"
+        }
+      ]
+    }
+  ]
+}

@@ -10,6 +10,26 @@
   <artifactId>shared-iossimulatorarm64</artifactId>
   <version>0.0.1</version>
   <packaging>klib</packaging>
+  <name>shared</name>
+  <description>Shared code between Android and iOS</description>
+  <url>https://github.com/Marc-Jalkh/android-ui</url>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>Marc-Jalkh</id>
+      <name>Marc Jalkh</name>
+      <email>marc@tomorrow.services</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/Marc-Jalkh/android-ui.git</connection>
+    <url>https://github.com/Marc-Jalkh/android-ui</url>
+  </scm>
   <dependencies>
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>

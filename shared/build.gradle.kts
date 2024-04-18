@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
-
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
@@ -63,13 +61,13 @@ kotlin {
             dependencies {
                 api(commonLibs.kotlin.stdlib)
 
-                with(commonLibs.kotlin){
+                with(commonLibs.kotlin) {
                     implementation(dateTime)
                     implementation(coroutinesCore)
                     implementation(serializationJson)
                 }
 
-                with(commonLibs.ktor){
+                with(commonLibs.ktor) {
                     implementation(clientCore)
                     implementation(clientJson)
                     implementation(json)
@@ -102,7 +100,42 @@ kotlin {
     }
 }
 
+val javadocJar = tasks.register("javadocJar", Jar::class.java) {
+    archiveClassifier.set("javadoc")
+}
+
 publishing {
+    publications {
+        withType<MavenPublication> {
+            artifact(javadocJar)
+            pom {
+                name.set("shared")
+                description.set("Shared code between Android and iOS")
+                url.set("https://github.com/Marc-Jalkh/android-ui")
+                licenses {
+                    license {
+                        name.set("The Apache License, Version 2.0")
+                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+                    }
+                }
+
+                developers {
+                    developer {
+                        id.set("Marc-Jalkh")
+                        name.set("Marc Jalkh")
+                        email.set("marc@tomorrow.services")
+                    }
+                }
+
+                scm {
+                    connection.set("scm:git:git://github.com/Marc-Jalkh/android-ui.git")
+                    url.set("https://github.com/Marc-Jalkh/android-ui")
+                }
+
+            }
+        }
+    }
+
     repositories {
         maven {
             setUrl("https://github.com/Marc-Jalkh/android-ui")

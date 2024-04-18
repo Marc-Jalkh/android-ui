@@ -1,0 +1,51 @@
+[versions]
+library-group = "com.tomorrow.kmmProjectStartup"
+library-version = "0.0.1"
+android = "7.4.0"
+
+kover = "0.6.1"
+ksp = "1.9.10-1.0.13"
+
+kotlin = "1.9.10"
+kotlinx-coroutines = "1.6.4"
+
+ktor = "2.3.2"
+
+ios-baseName = "kmmProjectStartup"
+ios-summary = "sahred library for kmm"
+ios-homepage="link to shared module"
+ios-authors = "Marc Jalkh"
+ios-version.ref = "library-version"
+ios-deployment-target = "14.1"
+
+android-compileSdk = "34"
+android-MinSdk = "26"
+
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-common", version.ref = "kotlin" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlin-dateTime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version = "0.4.0" }
+kotlin-coroutinesCore = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+
+kotlin-serializationJson ={ module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.5.1" }
+ktor-clientDarwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+ktor-serverCors = { module = "io.ktor:ktor-server-cors", version.ref = "ktor"}
+ktor-contentNegotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor"}
+ktor-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor"}
+ktor-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor"}
+ktor-clientCore = { module = "io.ktor:ktor-client-core", version.ref = "ktor"}
+ktor-clientJson = { module = "io.ktor:ktor-client-json", version.ref = "ktor"}
+ktor-clientLogging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor"}
+#ktor-clientSerialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor"}
+ktor-clientAndroid = { module = "io.ktor:ktor-client-android", version.ref = "ktor"}
+ktor-clientJs = { module = "io.ktor:ktor-client-js", version.ref = "ktor"}
+
+[plugins]
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+android-lib = { id = "com.android.library", version.ref = "android" }
+android-app = { id = "com.android.application", version.ref = "android" }
+kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
+
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }

@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
+
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
@@ -5,7 +7,6 @@ plugins {
     id("kover")
     id("com.android.library")
     id("kotlinx-serialization")
-
 }
 
 group = commonLibs.versions.library.group.get()
@@ -15,6 +16,7 @@ var androidTarget: String = ""
 kotlin {
     android {
         publishLibraryVariants("release")
+        publishLibraryVariantsGroupedByFlavor = true
     }
 
     androidTarget {
@@ -100,6 +102,14 @@ kotlin {
     }
 }
 
+publishing {
+    repositories {
+        maven {
+            setUrl("https://github.com/Marc-Jalkh/android-ui")
+        }
+    }
+}
+
 android {
     namespace = commonLibs.versions.library.group.get()
     compileSdk = commonLibs.versions.android.compileSdk.get().toInt()
@@ -126,30 +136,5 @@ android {
     }
     testOptions {
         unitTests.isReturnDefaultValues = true
-    }
-}
-
-
-publishing {
-    repositories {
-        maven {
-            name = "kmm_Project_Startup"
-        }
-    }
-    val thePublications = listOf(androidTarget) + "kotlinMultiplatform"
-
-    publications {
-        matching { it.name in thePublications }.all {
-            val targetPublication = this@all
-            tasks.withType<AbstractPublishToMaven>()
-                .matching { it.publication == targetPublication }
-                .configureEach { onlyIf { findProperty("isMainHost") == "true" } }
-        }
-        matching { it.name.contains("ios", true) }.all {
-            val targetPublication = this@all
-            tasks.withType<AbstractPublishToMaven>()
-                .matching { it.publication == targetPublication }
-                .forEach { it.enabled = false }
-        }
     }
 }

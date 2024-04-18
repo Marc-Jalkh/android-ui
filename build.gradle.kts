@@ -5,7 +5,7 @@ plugins {
     alias(commonLibs.plugins.kotlin.cocoapods).apply(false)
     alias(commonLibs.plugins.android.app).apply(false)
     alias(commonLibs.plugins.kover).apply(false)
-
+    id("maven-publish")
 }
 
 tasks.register("clean", Delete::class) {
@@ -20,7 +20,6 @@ buildscript {
     }
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-serialization:1.8.21")
-
     }
 }
 
@@ -33,4 +32,3 @@ subprojects {
         }
     }
 }
-

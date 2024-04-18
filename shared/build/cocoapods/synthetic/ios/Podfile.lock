@@ -1,0 +1,21 @@
+PODS:
+  - libPhoneNumber-iOS (1.0.4)
+
+DEPENDENCIES:
+  - libPhoneNumber-iOS (from `https://github.com/iziz/libPhoneNumber-iOS`)
+
+EXTERNAL SOURCES:
+  libPhoneNumber-iOS:
+    :git: https://github.com/iziz/libPhoneNumber-iOS
+
+CHECKOUT OPTIONS:
+  libPhoneNumber-iOS:
+    :commit: 8327e0d626b59b01f04c5016f5ae85f99dfcb98e
+    :git: https://github.com/iziz/libPhoneNumber-iOS
+
+SPEC CHECKSUMS:
+  libPhoneNumber-iOS: 17715d691e3db21af61243557f455d04b082cd02
+
+PODFILE CHECKSUM: 65fe580afe95ff9e80c5531b7ca1fcf8051b8536
+
+COCOAPODS: 1.15.2

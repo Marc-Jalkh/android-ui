@@ -138,7 +138,9 @@ publishing {
 
     repositories {
         maven {
+            name = "GitHubPackages"
             setUrl("https://github.com/Marc-Jalkh/android-ui")
+
         }
     }
 }
@@ -156,8 +158,8 @@ android {
             compileOptions {
                 // Flag to enable support for the new language APIs
                 isCoreLibraryDesugaringEnabled = true
-                sourceCompatibility = JavaVersion.VERSION_17
-                targetCompatibility = JavaVersion.VERSION_17
+                sourceCompatibility = JavaVersion.VERSION_11
+                targetCompatibility = JavaVersion.VERSION_11
             }
         }
     }

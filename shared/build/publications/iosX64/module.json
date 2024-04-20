@@ -11,7 +11,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "8.0"
+      "version": "8.4"
     }
   },
   "variants": [
@@ -238,11 +238,11 @@
         {
           "name": "shared-iosx64-0.0.1-metadata.jar",
           "url": "shared-iosx64-0.0.1-metadata.jar",
-          "size": 16799,
-          "sha512": "b939f93559d2b80b196c371c9ded7572b229a6a2cdd001ff5b78fd787ab44e012ab8ac478776adce7d1be3d24940b1888712c25c7e1773edbed7fd01d9792eaa",
-          "sha256": "3b5ab36c1f3564975bd241ca791a00da83d5286e663c4e858dea203a59ed73fd",
-          "sha1": "14151e2d99fb67d8d15a5347862840ad1bf1253a",
-          "md5": "b08ac593d839e7eac178ab7d32a0cb5f"
+          "size": 16797,
+          "sha512": "c869d0695d2504bd1dda7da4094e61d37c208b4a5ef247eb14eea60cd8a434f72f9da82bea30cc94c9c2094e8a951a57d52790a4b5fda7451e60a509ce077600",
+          "sha256": "46b0b99aab93e15a540b7bbdcf1191895e32645c2e239db4cb5c80901e936d14",
+          "sha1": "9a5768dc3cb2f86ca781af8b82b397df48c3dac8",
+          "md5": "17c79f5a42e40ed48d30230d4de56571"
         }
       ]
     }

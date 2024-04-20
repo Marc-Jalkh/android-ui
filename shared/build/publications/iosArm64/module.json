@@ -11,7 +11,7 @@
   },
   "createdBy": {
     "gradle": {
-      "version": "8.0"
+      "version": "8.4"
     }
   },
   "variants": [
@@ -238,11 +238,11 @@
         {
           "name": "shared-iosarm64-0.0.1-metadata.jar",
           "url": "shared-iosarm64-0.0.1-metadata.jar",
-          "size": 16799,
-          "sha512": "9b28c0fc5f6e68ea3f1c9c7de350b0363899f24aab5969a9c6df1623a31600573b6d28240eb0ac1eab36f1f31494dba6c7e3161e372c142ccf04ec840397fa73",
-          "sha256": "922a57ea2ad9a203e1d4625ac33056cf34bf1c01007d268cf3c509e157785257",
-          "sha1": "084faf4e8657b64dd84b58537fb2db8f671f60f1",
-          "md5": "e7ca3a0ddbcb42e8c0c42ffd889c2f1b"
+          "size": 16797,
+          "sha512": "4ddfe1960ab19ac4c9922e2038303a5ca5cf0b08c033f3b7e6017965bdaa062acde54a89bcbb49b4d05bd32d730253e138de77d51c8766cebbdb555eca97e251",
+          "sha256": "4be398dae8629f3dd3097a8249f77b3c6f0463956e55efe69cad25f7d02e8961",
+          "sha1": "0e0b433756225e5d1c19089802010d38b6c6fd49",
+          "md5": "27a26c271cc6d2419ea4eaeee069c49f"
         }
       ]
     }

@@ -28,13 +28,6 @@ kotlin {
     iosArm64()
     iosSimulatorArm64()
 
-    targets.withType<org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget> {
-        binaries.all {
-            freeCompilerArgs += listOf("-Xgc=cms")
-        }
-    }
-
-
     cocoapods {
         val iosDefinitions = commonLibs.versions.ios
         name = iosDefinitions.baseName.get()

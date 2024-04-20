@@ -20,7 +20,7 @@ kotlin {
     androidTarget {
         compilations.all {
             kotlinOptions {
-                jvmTarget = "1.8"
+                jvmTarget = "11"
             }
         }
     }
@@ -146,6 +146,10 @@ android {
     defaultConfig {
         minSdk = commonLibs.versions.android.minSdk.get().toInt()
         targetSdk = commonLibs.versions.android.compileSdk.get().toInt()
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11 // Ensure Java 11 compatibility
+        targetCompatibility = JavaVersion.VERSION_11
     }
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     beforeEvaluate {

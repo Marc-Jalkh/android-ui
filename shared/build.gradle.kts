@@ -9,7 +9,6 @@ plugins {
 
 group = commonLibs.versions.library.group.get()
 version = commonLibs.versions.library.version.get()
-var androidTarget: String = ""
 
 kotlin {
     android {
@@ -20,7 +19,7 @@ kotlin {
     androidTarget {
         compilations.all {
             kotlinOptions {
-                jvmTarget = "11"
+                jvmTarget = "1.8"
             }
         }
     }
@@ -145,17 +144,14 @@ android {
     compileSdk = commonLibs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = commonLibs.versions.android.minSdk.get().toInt()
-        targetSdk = commonLibs.versions.android.compileSdk.get().toInt()
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11 // Ensure Java 11 compatibility
-        targetCompatibility = JavaVersion.VERSION_11
     }
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     beforeEvaluate {
         libraryVariants.all {
             compileOptions {
-                // Flag to enable support for the new language APIs
+                sourceCompatibility = JavaVersion.VERSION_1_8
+                targetCompatibility = JavaVersion.VERSION_1_8
+                // Enable desugaring
                 isCoreLibraryDesugaringEnabled = true
             }
         }

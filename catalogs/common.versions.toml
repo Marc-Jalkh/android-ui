@@ -1,7 +1,7 @@
 [versions]
 library-group = "com.tomorrow.kmmProjectStartup"
 library-version = "0.0.1"
-android = "7.4.0"
+android = "8.3.0"
 
 kover = "0.6.1"
 ksp = "1.9.10-1.0.13"
